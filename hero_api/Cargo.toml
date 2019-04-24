@@ -1,0 +1,22 @@
+[package]
+name = "hero_api"
+version = "0.1.0"
+authors = ["nmrshll <marshall.nicolas@gmail.com>"]
+
+[dependencies]
+rocket = "0.3.6"
+rocket_codegen = "0.3.6"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+r2d2 = "*"
+r2d2-diesel = "*"
+dotenv = "0.13.0"
+diesel = { version = "1.0.0", features = ["postgres"] }
+# diesel_codegen = { version = "0.16.1", features = ["postgres"] }
+
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["json"]
